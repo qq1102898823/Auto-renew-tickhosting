@@ -13,11 +13,11 @@ import re
 # 从环境变量读取登录凭据，默认使用PTERODACTYL_SESSION，账号密码作为备用方案，请在settings-actons里设置环境变量 
 EMAIL = os.getenv('EMAIL', '')        # 登录邮箱
 PASSWORD = os.getenv('PASSWORD', '')  # 登录密码
-SESSION_COOKIE = os.getenv('PTERODACTYL_SESSION', '')
+SESSION_COOKIE = os.getenv('PTERODACTYL_SESSION', 'eyJpdiI6Im1naVRhTWtxbUN4SEU3ejVpZEVDTUE9PSIsInZhbHVlIjoibHJMaWN0NXlRVk5ZQ0VpVTkyTllRQzFxNVVlbmFtendiZzhGR3BJemJrZC9hYTlaK2tsMi9pN0xzbTNtb2hMb2hZTzVYbGpQY05nNlh1VmR5citTa25UbVY5V2FOdEtnZm9ZNDdUQThmWkZ6UzBSMkwvMzJHdC9iTUFZWExLTHEiLCJtYWMiOiIwYzY5MTcxZDk5MzBjNDQ0OGFiOWVmOGZlMmQ3ODI2ZThkODU2ZjVjMzgxYmFkMzA0NGM3ZDM3MjNlOGMxZGVhIiwidGFnIjoiIn0%3D')
 
 # Telegram Bot 通知配置（可选）
-TELEGRAM_BOT_TOKEN = os.getenv('TELEGRAM_BOT_TOKEN', '')
-TELEGRAM_CHAT_ID = os.getenv('TELEGRAM_CHAT_ID', '')
+TELEGRAM_BOT_TOKEN = os.getenv('TELEGRAM_BOT_TOKEN', 'AAEozcWM4jIwPOHAul6a_TSQE0hMwGLht8g')
+TELEGRAM_CHAT_ID = os.getenv('TELEGRAM_CHAT_ID', '6243193187')
 
 def setup_driver():
     options = webdriver.ChromeOptions()
